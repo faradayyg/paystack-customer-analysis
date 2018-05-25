@@ -9,8 +9,8 @@ Probably will use gulp or webpack in future, but for now, nothing is needed to s
 
 ### Contibuting
 
-Really? 😂
-There's sha nothing to contribute
+Really? 😋
+There's sha nothing to contribute but do contact me
 
 ### Bug?
 Contact faradayyg[at]gmail[dot]com
