@@ -50,7 +50,7 @@ app.controller("sliderController", ($scope,$http) => {
 		let offset 		= 1.2;
 		let hintDiv 	= document.querySelector('#hint');
 
-		offset -= newPoint;
+		offset += newPoint;
 		hintDiv.style.left = newPlace+"px";
 		if($scope.topCustomers == 1 ||$scope.topCustomers == 12) {
 			hintDiv.style.display = "none";
