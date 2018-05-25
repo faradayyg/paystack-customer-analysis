@@ -10,11 +10,15 @@
 		<div class="container">
 
 			<h3 class="header-text">Share Of Revenue</h3>
-			
+
+			<span id="hint" class="hint">{{topCustomers}}</span>
+			<span class="pull-right">12</span>
+			<span>1</span>
+
 		  	<input type="range" 
-		  	list="tickmarks"
-		  	ng-change="percentage = calculatePercentage()" 
-		  	min="1" max="12" value="12" class='slider' 
+		  	id="rangeSlider" 
+		  	ng-change="percentage = calculatePercentage(); setHint()" 
+		  	min="1" max="12" value="12" class="slider"
 		  	ng-model="topCustomers" />
 
 		  	<p>
