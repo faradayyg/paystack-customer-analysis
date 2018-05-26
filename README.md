@@ -1,7 +1,10 @@
 # paystack-customer-analysis
 
+
 - This Project is supposed to fetch the top paying customers between given time, 
-- Using a slider, Classify what percentage of the total payments was made by the seleted top customers
+- Using a slider, Classify what percentage of the total payments was made by the selected top customers
+
+Checkout the demo <a href='https://codepen.io/faradayyg/pen/Ryzzpd'>here</a>
 
 ## Tech Stack
 - Angularjs 

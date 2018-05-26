@@ -45,14 +45,16 @@ app.controller("sliderController", ($scope,$http) => {
 
 	$scope.setHint 		= () => {
 		let slider 		= document.querySelector('#rangeSlider');
-		let newPoint 	= (slider.value - slider.getAttribute("min")) / (slider.getAttribute("max") - slider.getAttribute("min"));
+		let sliderMin 	= slider.getAttribute("min");
+		let sliderMax 	= slider.getAttribute("max");
+		let newPoint 	= (slider.value - sliderMin) / (sliderMax - sliderMin);
 		let newPlace 	= slider.offsetWidth * newPoint;
 		let offset 		= 1.2;
 		let hintDiv 	= document.querySelector('#hint');
 
 		offset += newPoint;
 		hintDiv.style.left = newPlace+"px";
-		if($scope.topCustomers == 1 ||$scope.topCustomers == 12) {
+		if($scope.topCustomers == sliderMin ||$scope.topCustomers == sliderMax) {
 			hintDiv.style.display = "none";
 		}
 		else {
