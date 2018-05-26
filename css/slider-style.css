@@ -76,8 +76,8 @@
 }
 
 .container {
-    width: 40%;
-    min-width: 300px;
+    width: 90%;
+    max-width: 500px;
     margin: auto;   
     padding: 20px;
     position: relative;
